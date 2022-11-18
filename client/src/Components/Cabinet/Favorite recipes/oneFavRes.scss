@@ -1,0 +1,48 @@
+.one-gallery {
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior:smooth;
+    max-width: 89%;
+  }
+  
+  .one-gallery__img {
+    scroll-snap-align: start;
+    border-radius: 15px;
+    min-height: 300px;
+    min-width: 450px;
+    max-width: 450px;
+    max-height: 300px;
+    object-fit: cover;
+    filter: brightness(75%)
+  }
+
+  .one-recipe-box{
+    position:relative;
+    
+     img{
+        opacity: 1;
+      }
+
+  }
+  .cooked-box{
+    position:absolute;
+    top: 1em;
+    left: 2em;
+    color:white;
+  }
+  .cooked-name{
+    position: absolute;
+    top: 70%;
+    left:7%;
+    color:white;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    opacity: 0.9;
+  }
+  .cooked-done{
+    color:white;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    opacity: 0.9;
+  }

@@ -1,0 +1,30 @@
+.fav-rec{
+    margin-top: 7%;
+    margin-left: 33%;
+}
+
+.fav-rec-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 300px;
+}
+
+.spisok-fav {
+  margin-left: 10%;
+}
+
+.best-food {
+  margin-top:3%
+}
+
+.heart-fav {
+    position:absolute;
+    top: 2em;
+    left: 2em;
+    color:rgb(255, 0, 0);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+

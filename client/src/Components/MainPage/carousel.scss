@@ -1,0 +1,103 @@
+#root{
+  background-image: url(https://img.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg?w=1380&t=st=1666689000~exp=1666689600~hmac=6e4765e0b2243ab3191b5abe19985ee0fc6c4d72cd5114c9db7a93e748715774);
+  // background-repeat:repeat;
+  // background-position: center center;
+  // background-attachment:scroll;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    height: 88vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-height: 98%;
+  }
+  
+  .gallery__img {
+    scroll-snap-align: start;
+    // margin-bottom: -50px;
+    min-height: 70vh;
+    min-width: 1450px;
+    object-fit: cover;
+  }
+  
+  .lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 98%;
+  
+    a {
+      height: 200px;
+      display: flex;
+      margin-bottom: 8px;
+    }
+  }
+  
+  .lil-nav__img {
+    object-fit: cover;
+    // filter: saturate(0);
+    transition: 0.3s ease all;
+  
+    &:hover {
+      transform: scale(1.05);
+      filter: saturate(1);
+    }
+  }
+
+  .recipe-box{
+    position:relative;
+    background: #000;
+    p{
+      position: absolute;
+      top:80%;
+      left:1em;
+      color:white;
+      font-size: 45px;
+      font-family: 'EB Garamond', serif;
+      opacity: 0.9;
+      }
+     
+     img{
+        opacity: 0.8;
+      }
+    .fa-heart {
+      position:absolute;
+      top: 2em;
+      left: 85%;
+      color:rgb(255, 0, 0);
+    }
+    .fa-2xl {
+      font-size: 47px;
+    }
+
+    .fa-regular{
+      color:rgb(255, 255, 255);
+    }
+
+    fieldset {
+      position:absolute;
+      top: 6em;
+      left: 70em;
+      color:white;
+    }
+  }
